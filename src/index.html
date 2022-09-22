@@ -1,122 +1,68 @@
 @@include('includes/nav.html')
-<header class="hero-header">
-  <nav class="hero-header__nav">
-    <div class="logo-box">
-      <a href="index.html">
-        <img src="images/Logo-white.png" alt="logo" class="logo-box__img" />
-      </a>
-    </div>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <label for="navi-toggle" class="navigation__button" id="top-home">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background" id="top-home-bg">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html" class="navigation__link">&nbsp; &nbsp; &nbsp; Home &nbsp; &nbsp; &nbsp;</a>
-          </li>
-          <li class="navigation__item">
-            <label for="drop-1" class="toggle navigation__link">About us <i class="fa fa-angle-down"></i></label>
-            <a href="aboutUs.html" class="navigation__link"> &nbsp; &nbsp;About us <i class="fa fa-angle-down"></i>&nbsp; &nbsp;</a>
-            <input type="checkbox" id="drop-1">
-            <ul class="navigation__item-sub list-unstyled">
-              <li class="navigation__item"><a href="team.html" class="navigation__link"> &nbsp; &nbsp; &nbsp;Teams &nbsp; &nbsp; &nbsp;</a></li>
-              <li class="navigation__item"><a href="programms.html" class="navigation__link">&nbsp; &nbsp; &nbsp;Programs&nbsp; &nbsp; &nbsp;</a></li>
-            </ul>
-          </li>
-          <li class="navigation__item">
-            <a href="startups.html" class="navigation__link">&nbsp; &nbsp; Start-ups &nbsp; &nbsp;</a>
-          </li>
-          <li class="navigation__item">
-            <label for="drop-2" class="toggle navigation__link">Learning center <i class="fa fa-angle-down"></i></label>
-            <a href="learning_center.html" class="navigation__link">&nbsp; &nbsp; Learning center <i class="fa fa-angle-down"></i>&nbsp; &nbsp;</a>
-            <input type="checkbox" id="drop-2">
-            <ul class="navigation__item-sub list-unstyled">
-              <li class="navigation__item"><a href="blog.html" class="navigation__link">&nbsp; &nbsp; &nbsp;blog &nbsp; &nbsp; &nbsp;</a></li>
-              <li class="navigation__item"><a href="events-page.html" class="navigation__link">&nbsp; &nbsp; &nbsp;events&nbsp; &nbsp; &nbsp;</a></li>
-            </ul>
-          </li>
-          <li class="navigation__item">
-            <a href="contactUs.html" class="navigation__link"><span>05</span>Contact us</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+<aside class="sidebar">
+    
+  <nav class="sidebar__menu">
+    <a href="">Accueil</a>
+    <a href="">Site</a>
+    <a href="">Chambres</a>
+    <a href="">Restauration</a>
+    <a href="">Bien Etre & Activités</a>
+    <a href="">Evenements</a>
+    <a href="">Photos & Video</a>
+    <a href="">Plan & Acces</a>
+    <a href="">Reservé</a>
+    <a href="">Contactez Nous</a>
   </nav>
-
-  <div class="hero-header__main">
-    <div class="hero-header__main-text">
-      <h1 class="heading">
-        We are
-        <span class="secondary-variant">P-curiosity Lab</span> <br />
-        <span class="typist"></span>
-      </h1>
-      <p class="sub-heading">
-        An innovation lab to design a new farmers services bio-inspired
-      </p>
-    </div>
-    <div class="hero-header__slider owl-carousel owl-theme owl-loaded owl-drag">
-      <div class="hero-header__outer owl-stage-outer">
-        <div class="owl-stage">
-          <div class="video-mask owl-item">
-            <video class="video-js hero-header__video vjs-theme-forest" controls preload="auto"
-              poster="images/video-thumb.png"
-              data-setup='{"techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=dhtvdN7LPjA"}]}'>
-              <!-- <source src="https://vimeo.com/user116976756/review/425285787/0e3f968fab" type="video/mp4" /> -->
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to
-                a web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </div>
-          <div class="hero-slide owl-item">
-            <img src="images/ennov2.png" alt="" class="hero-slide__img">
-          </div>
-          <div class="hero-slide owl-item">
-            <img src="images/ennov.png" alt="" class="hero-slide__img">
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
+  
+  <label for="menu-control" class="sidebar__close"></label>
+  
+</aside>
+ <section class="showcase">
+  <header>
+    <!-- <h2 class="logo">Travel</h2> -->
+    <img src="assets/logo/logo-white.png" alt="logo" class="logo">
+    <ul class="menu-items list-unstyled">
+      <li class="menu-item" id="MenuBtn">Menu</li>
+      <li class="menu-item">Reservé</li>
+      <li class="menu-item">Contact</li>
+    </ul>
+  </header>
+  <video src="assets/videos/kechmontana.mp4" muted loop autoplay></video>
+  <div class="overlay"></div>
+  <div class="text">
+    <h2>Maison D'hôte</h2> 
+    <h3>Kech Montana</h3>
+    <a href="#">Reserver</a>
   </div>
-  <a href="" class="btn btn--header btn--blue mt-4">Start A Projects
-    <img class="btn__arrow-tip" src="images/arrow-tip.svg" alt="arrow-tip" /></a>
-</header>
-
-<section class="mission">
-  <h1 class="mission__title" data-aos="fade-right">Mission</h1>
-  <div class="mission__wrapper" data-aos="zoom-in">
-    <h3 class="mission__subtitle">
-      We observe, we Design, we Prototype we Test then we Serve.
-    </h3>
-    <h5 class="mission__para">
-      We think about innovation in both ways, to deliver innovative & radically
-      inclusive services, and as a solution for market Challenges ”
-    </h5>
-    <div class="mission__more">
-      <a href="" class="mission__link">Learn More &rarr;</a>
-    </div>
-    <img class="mission__bg" src="images/bg-Mission.png" alt="" />
-  </div>
+  <ul class="social">
+    <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+    <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+    <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+  </ul>
 </section>
 
+<!-- <div class="menu">
+  <ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Site</a></li>
+    <li><a href="#">Chambres</a></li>
+    <li><a href="#">Restauration</a></li>
+    <li><a href="#">Bien Etre & Activités</a></li>
+    <li><a href="#">Evenements</a></li>
+    <li><a href="#">Photos & Video</a></li>
+    <li><a href="#">Plan & Acces</a></li>
+    <li><a href="#">Reserver</a></li>
+    <li><a href="#">Contactez Nous</a></li>
+  </ul>
+</div> -->
 
-@@include('includes/objectives.html') @@include('includes/howWork.html')
-@@include('includes/weOffer.html') @@include('includes/events.html')
-@@include('includes/latestnews.html') @@include('includes/getStarted.html')
+
+
 @@include('includes/footer.html')
 
 <!-- custom js -->
-<script>
+<!-- <script>
   var typed = new Typed(".typist", {
     strings: [
       "true innovation",
@@ -167,4 +113,4 @@
     // Parameters has to be in square bracket '[]'
     owl.trigger("prev.owl.carousel", [300]);
   });
-</script>
+</script> -->
