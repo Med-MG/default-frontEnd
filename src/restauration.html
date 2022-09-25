@@ -1,0 +1,138 @@
+@@include('includes/nav.html')
+@@include('includes/sidebar.html')
+
+<div class="hero" style="background:linear-gradient(0deg, rgba(43, 19, 0, 0.379), rgba(17, 17, 17, 0.729)), url(assets/images/restauration/image039-min.png)  no-repeat center bottom; background-size: cover;" >
+  <nav class="navigation">
+      <img src="assets/logo/logo-white.png" alt="logo" class="navigation__logo">
+      <ul class="navigation__list list-unstyled">
+          <li class="navigation__items" id="MenuBtn">Menu</li>
+          <li class="navigation__items">Reservé</li>
+          <li class="navigation__items">Contact</li>
+      </ul>
+  </nav>
+
+  <div class="heading">
+      <h1 class="heading__title">Restauration</h1>
+      <p class="heading__sub">Des produits frais de notre jardin, préparés dans nos cuisines, avec des saveurs méditerranéennes et orientales</p>
+  </div>
+</div>
+
+<section class="siteabout">
+  <div class="siteabout__imgc">
+      <img src="assets/images/restauration/image041-min.png" alt="site about" class="siteabout__img">
+    </div>
+  <div class="siteabout__content">
+    <h2>Restauration</h2>
+    <p>L'essentiel des produits utilis&eacute;s dans nos cuisines sont produits par nos propres soins de mani&egrave;re &eacute;cologique et biologique.</p>
+    <p>Production de l&eacute;gumes de notre jardin.</p>
+    <p>Cuisine v&eacute;g&eacute;tarienne pour les amateurs.</p>
+    <p>De nos olivier, huile d'olives vierge, premi&egrave;re pression &agrave; froid.</p>
+    <p>Production de viandes de volailles, agneaux et cabris.</p>
+    <p>Petit d&eacute;jeuner marocain copieux, compos&eacute; de produits frais: pain, cr&ecirc;pes, soupe de c&eacute;r&eacute;ales parfum&eacute; au fenugrec, &oelig;ufs de notre poulailler, jus d'orange press&eacute; du jour, fruits de saison.</p>
+    <p>Chaque jour un menu de midi et du soir sont &nbsp;propos&eacute;s &agrave; nos h&ocirc;tes compos&eacute;s d'une entr&eacute;e, d'un plat pricipal et d'un dessert.</p>
+    <p>Cuisine traditionnelle marocaine et europ&eacute;enne dans un esprit gastronomique.</p>
+    <p>Limonades et th&eacute;s froids maison.</p>
+    <p class="text-italic">**Tous nos plats sont &eacute;labor&eacute;s et mitonn&eacute;s dans nos cuisines avec des produits frais**</p>
+  </div>
+</section>
+
+<section class="restaurant">
+  <div class="restaurant__content">
+    <h2>Exemples de formules proposées</h2>
+    <div class="meal">
+      <p class="meal__time">Petit déjeuner</p>
+      <p class="meal__price">80dh</p>
+    </div>
+    <div class="meal u-mb-m">
+      <p class="meal__time">Diner</p>
+      <p class="meal__price">285dh</p>
+    </div>
+
+    <div class="meal">
+      <p class="meal__time">Petit déjeuner</p>
+      <p class="meal__price">80dh</p>
+    </div>
+    <div class="meal">
+      <p class="meal__time">Déjeuner</p>
+      <p class="meal__price">235dh</p>
+    </div>
+    <div class="meal u-mb-m">
+      <p class="meal__time">Diner</p>
+      <p class="meal__price">285dh</p>
+    </div>
+
+    <div class="meal">
+      <p class="meal__time">Grande salade</p>
+      <p class="meal__price">120dh</p>
+    </div>
+    <div class="meal">
+      <p class="meal__time">Fruits</p>
+      <p class="meal__price">30dh</p>
+    </div>
+    <div class="meal u-mb-m">
+      <p class="meal__time">Diner</p>
+      <p class="meal__price">285dh</p>
+    </div>
+
+    <div class="meal">
+      <p class="meal__time">Petit déjeuner</p>
+      <p class="meal__price">80dh</p>
+    </div>
+    <div class="meal">
+      <p class="meal__time">Déjeuner</p>
+      <p class="meal__price">235dh</p>
+    </div>
+    <div class="meal">
+      <p class="meal__time">Thé</p>
+      <p class="meal__price">25dh</p>
+    </div>
+    <div class="meal u-mb-m">
+      <p class="meal__time">Diner</p>
+      <p class="meal__price">285dh</p>
+    </div>
+    <p>Chaque convive personnalisera et choisira la formule qui lui convient.</p>
+    <p>L'eau min&eacute;rale et les soda sont &agrave; volont&eacute; et inclus dans le prix de votre s&eacute;jour. TVA 10% comprise</p>
+  </div>
+  <div class="restaurant__carousel owl-carousel">
+    <div class="restaurant__carousel__item">
+      <a href="assets/images/restauration/image042-min.png" data-fancybox="group1" ><img src="assets/images/restauration/image042-min.png" alt="" class="restaurant__carousel--img"></a>
+    </div>
+    <div class="restaurant__carousel__item">
+      <a href="assets/images/restauration/image043-min.png" data-fancybox="group1" ><img src="assets/images/restauration/image043-min.png" alt="" class="restaurant__carousel--img"></a> 
+    </div>
+    <div class="restaurant__carousel__item">
+            <a href="assets/images/restauration/image044-min.png" data-fancybox="group1" ><img src="assets/images/restauration/image044-min.png" alt="" class="restaurant__carousel--img"></a> 
+    </div>
+  </div>
+</section>
+<div class="restaurant__mainpic">
+  <img src="assets/images/restauration/image049-min.png" alt="" class="restaurant__mainpic--img">
+</div>
+
+
+<script>
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+              loop:false
+          }
+      }
+  })
+});
+</script>
+ 
+@@include('includes/footer.html')
