@@ -12,6 +12,8 @@ closeBtn.addEventListener("click", function() {
     sidebar.classList.add("sidebar_inactive");
     // sidebar.classList.remove("sidebar_active");
 });
+
+
 // // let humberguer = (() => {
 // //     let hamburger = document.querySelector('.hamburger');
 // //     hamburger.addEventListener('click', () => {
