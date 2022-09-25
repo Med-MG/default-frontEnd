@@ -1,0 +1,50 @@
+.hero{
+    position: relative;
+    padding: 5rem;
+    height: 40vh;
+    width: 100%;
+    background-size: cover ;
+    background-position: center;
+    @include responsive(phone-1){
+        height: 35vh;
+      }
+    .navigation{
+        display: flex;
+        align-items: center;
+        &__logo{
+            width: 12rem;
+            margin-right: 5rem;
+        }
+        &__list{
+            transition: .3s ease;
+            font-size: 2.6rem;
+            color: #ffffff;
+            display: flex
+            
+        }
+        &__items{
+            margin-right: 3rem;
+            cursor: pointer; 
+            &:hover{
+                border-bottom: 2.5px solid #ffffff;
+            }
+        }
+    }
+
+    .heading{
+        color: #ffffff;
+        margin-top: 3rem;
+        line-height: 1.5;
+        padding-left: 1rem;
+        @include responsive(phone-1){
+            padding-left: 0;
+            text-align: center;
+          }
+        &__title{
+            font-size: 5.5rem;
+        }
+        &__sub{
+            font-size: 3rem;
+        }
+    }
+}
