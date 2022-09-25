@@ -1,0 +1,82 @@
+.restaurant{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 45rem auto;
+    
+
+    @include responsive(tab-land){
+        grid-template-columns: 1fr;
+        grid-template-rows:  30rem 1fr;
+
+    }
+    &__content{
+        background-color: $primary;
+        color: $secondary;
+        grid-area: 1/1/2/2;
+        padding: 3rem;
+        line-height: 1.7;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+        @include responsive(tab-land){
+            grid-area: 2/1/3/2;
+           width: 100vw;
+           height: fit-content;
+        }
+    }
+    &__carousel{
+        grid-area: 1/2/2/3;
+        overflow: hidden;
+        @include responsive(tab-land){
+            grid-area: 1/1/2/2;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+
+        }
+        &--img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .owl-stage-outer {
+            height: 100%;
+        }
+    }
+
+    .meal{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6rem;
+        @include responsive(tab-land){
+            padding: 0 12rem;
+        }
+        &__time{}
+        &__price{}
+    }
+
+    &__mainpic{
+        width: 100%;
+        height: 60vh;
+        margin-top: 2rem;
+        &--img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .owl-carousel .owl-stage {
+        display: flex;
+        height: 100%;
+    }
+    
+    .owl-carousel .owl-item .restaurant__carousel__item {
+        width: auto;
+        height: 100%;
+    }
+}
+
