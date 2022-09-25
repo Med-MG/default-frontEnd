@@ -1,7 +1,7 @@
 .footer {
-    padding: 10rem;
-    background-color: $footer;
-
+    padding: 4rem 6rem;
+    background-color: $primary;
+    margin-top: 2rem;
     .partners {
         margin: 0 auto;
         width: 30%;
@@ -89,7 +89,9 @@
         margin-right: auto;
         display: block;
 
-        // &-logo {}
+        &-logo {
+            width: 15rem;
+        }
         @include responsive(tab-land-1) {
             grid-area: 1 /span 3;
             text-align: center;
@@ -100,6 +102,7 @@
                 @include description-font;
                 line-height: 1.9;
                 font-size: 2rem;
+                color: $secondary;
             }
 
             @include responsive(tab-land-1) {
@@ -124,7 +127,7 @@
             input[type="email"] {
                 padding: 2rem 3rem;
                 @include description-font;
-                width: 88%;
+                width: 100%;
                 border: 1px solid $footer;
                 background-color: $light-gray;
 
@@ -135,7 +138,7 @@
 
             &-icon {
                 position: absolute;
-                right: 8rem;
+                right: 3rem;
                 width: 2.5rem;
                 top: 1.6rem;
                 cursor: pointer;
@@ -212,11 +215,13 @@
         }
 
         &-links {
-            color: $primary-variant;
+            color: $secondary;
 
             &-heading {
-                @include medium-font;
-                color: $color-lighter-black;
+                // @include medium-font;
+                font-size: $medium-font-size;
+                font-weight: 900;
+                color: $secondary;
             }
         }
     }
@@ -227,27 +232,28 @@
 
 
 .subfooter {
-    background-color: #10266b;
+    background-color: $primary;
     border-top: 1.5px solid $light-gray;
     padding: 2rem 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: 2px solid $secondary;
 
     @include responsive(phone){
         justify-content: center;
     }
 
     h5 {
-        color: white !important;
-        font-size: 1.5rem;
+        color: $secondary !important;
+        font-size: 1.9rem;
         font-weight: 400;
         display: inline-block;
     }
 
     &-saperator {
         margin: 0 1rem;
-        border-left: 2px solid #8492a6;
+        border-left: 2px solid $secondary;
     }
 
     // &__copyright{
