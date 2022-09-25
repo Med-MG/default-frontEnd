@@ -1,23 +1,6 @@
 @@include('includes/nav.html')
 
-<aside class="sidebar">
-    
-  <nav class="sidebar__menu">
-    <a href="">Accueil</a>
-    <a href="">Site</a>
-    <a href="">Chambres</a>
-    <a href="">Restauration</a>
-    <a href="">Bien Etre & Activités</a>
-    <a href="">Evenements</a>
-    <a href="">Photos & Video</a>
-    <a href="">Plan & Acces</a>
-    <a href="">Reservé</a>
-    <a href="">Contactez Nous</a>
-  </nav>
-  
-  <label for="menu-control" class="sidebar__close"></label>
-  
-</aside>
+
  <section class="showcase">
   <header>
     <!-- <h2 class="logo">Travel</h2> -->
@@ -41,76 +24,41 @@
     <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
   </ul>
 </section>
+@@include('includes/sidebar.html')
 
-<!-- <div class="menu">
-  <ul>
-    <li><a href="#">Accueil</a></li>
-    <li><a href="#">Site</a></li>
-    <li><a href="#">Chambres</a></li>
-    <li><a href="#">Restauration</a></li>
-    <li><a href="#">Bien Etre & Activités</a></li>
-    <li><a href="#">Evenements</a></li>
-    <li><a href="#">Photos & Video</a></li>
-    <li><a href="#">Plan & Acces</a></li>
-    <li><a href="#">Reserver</a></li>
-    <li><a href="#">Contactez Nous</a></li>
-  </ul>
-</div> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed-js/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/ecadb3d96a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/isotope.min.js"></script>
 
 
+   
+    <script>
+      var menuBtn = document.querySelector('#MenuBtn');
+      var sidebar = document.querySelector('.sidebar');
+      var closeBtn = document.querySelector('.sidebar__close');
 
-@@include('includes/footer.html')
+      menuBtn.addEventListener("click", function() {
+          sidebar.classList.remove("sidebar_inactive");
+          sidebar.classList.add("sidebar_active");
+      });
+      closeBtn.addEventListener("click", function() {
+          sidebar.classList.add("sidebar_inactive");
+      });
 
-<!-- custom js -->
-<!-- <script>
-  var typed = new Typed(".typist", {
-    strings: [
-      "true innovation",
-      "good ideas ",
-      "Ultimately, progress",
-    ],
-    loop: true,
-    loopCount: Infinity,
-    smartBackspace: true,
-    typeSpeed: 40,
-    backSpeed: 40,
-  });
+    </script>
 
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
-    loop: true,
-    autoWidth:true,
-    autoplay:false,
-    autoplayTimeout:3000,
-    margin: 10,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-        margin: 20,
-        nav: false,
-      },
-      1980: {
-        items: 3,
-        margin: 20,
-        nav: false,
-        loop: true,
-      },
-    },
-  });
+   
+    <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
+    <script src="js/Youtube.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <!-- onscroll animation library -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
 
-  owl.owlCarousel();
-  // Go to the next item
-  $(".news-next").click(function () {
-    owl.trigger("next.owl.carousel");
-  });
-  // Go to the previous item
-  $(".news-prev").click(function () {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger("prev.owl.carousel", [300]);
-  });
-</script> -->
+
+
+</body>
+</html>
